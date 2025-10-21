@@ -1,0 +1,28 @@
+---
+layout: default
+title: "Royal Kitty Videos"
+---
+
+<link rel="stylesheet" href="{{ "/assets/style.css" | relative_url }}">
+
+<header class="hero">
+  <h1 class="site-title">🎬 Royal Kitty — Featured Videos</h1>
+  <p class="site-desc">Watch trending exclusive videos in Full HD. Click to explore.</p>
+</header>
+
+<main class="content">
+  <div class="post-grid">
+    {% for post in site.posts %}
+      <article class="post-card">
+        <a href="{{ post.url | relative_url }}">
+          <img src="{{ post.thumbnail }}" alt="{{ post.title }}">
+          <h2>{{ post.title }}</h2>
+        </a>
+        <p>{{ post.excerpt | strip_html | truncate: 100 }}</p>
+        <a href="{{ post.full_link }}" class="watch-btn" target="_blank" rel="noopener">WATCH FULL HD</a>
+      </article>
+    {% endfor %}
+  </div>
+</main>
+
+<footer class="site-footer">© 2025 Royal Kitty. All Rights Reserved.</footer>
