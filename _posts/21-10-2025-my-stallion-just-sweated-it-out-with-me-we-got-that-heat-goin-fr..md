@@ -13,16 +13,10 @@
 <script type="text/javascript" src="//delivercanes.com/710ee0d171855b836c3b11d44a0874b8/invoke.js"></script>
 <br>
 <br>
-<div class="video-inner" bis_skin_checked="1">
-          <video autoplay="" controls="" width="100%" id="video" playsinline="" src="https://cdn.videy.co/jsui6O3Y1.mp4">
-            <source type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <div id="video-error" style="display: none;" class="video-error-container" bis_skin_checked="1">
-        <div class="video-error" bis_skin_checked="1">Video could not load.</div>
-        <div class="video-error-reasons" bis_skin_checked="1">This could be because the video was removed, your internet connection is down, the server is having issues, or the video might not have ever existed.</div>
-      </div>
-        </div>
+<video controls poster="{{ page.thumbnail }}" width="100%" preload="metadata">
+  <source src="https://cdn.videy.co/jsui6O3Y1.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 <br>
 <script type="text/javascript">
 	atOptions = {
