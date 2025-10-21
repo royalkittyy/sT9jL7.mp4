@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ page.title }} — {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ "/assets/style.css" | relative_url }}">
+</head>
+<body>
+  <div class="container">
+    <a class="home-link" href="{{ "/" | relative_url }}">⬅ Back to Home</a>
+    <h1 class="post-title">{{ page.title }}</h1>
+    <div class="post-content">
+      {{ content }}
+    </div>
+    <div style="margin-top:24px;">
+      <a href="{{ page.full_link }}" class="watch-btn" target="_blank" rel="noopener">WATCH FULL HD</a>
+    </div>
+  </div>
+</body>
+</html>
